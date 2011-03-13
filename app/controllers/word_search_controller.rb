@@ -20,10 +20,10 @@ class WordSearchController < ApplicationController
 
     #make sure there is only one work
     checkit = search_word.split(" ")
-    puts "#{checkit.inspect}"
 
     render :inline => "<xml><error>Only enter one word</error><search1data></search1data><search2data></search2data></xml>" if checkit.length > 1
     return if checkit.length > 1
+
 
     results = WordSearch.find_using(search_word)
     render :inline => "<xml><error></error><search1data>#{results.google_results}</search1data><search2data>#{results.results_twitter}</search2data></xml>"

@@ -275,3 +275,753 @@
   [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
   [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
   [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (83.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (58.6ms)[0m   [0;1mDROP TABLE `word_searches`[0m
+  [4;35;1mSQL (58.1ms)[0m   [0mCREATE TABLE `word_searches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `keyword` varchar(255), `results_yahoo` text, `results_twitter` text, `search_hitcount_per_ten_mins` int(11), `created_at` datetime, `updated_at` datetime, `google_results` text) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110313172847')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (1.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (1.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (1.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mWordSearch Update (0.7ms)[0m   [0;1mUPDATE `word_searches` SET `search_hitcount_per_ten_mins` = 0, `results_yahoo` = 'I think I&#039;m going to throw a party like I said and invite all of my D.A.R.E friends I&#039;ll also try to invite CM Punk and have a pepsi machine in my house for him\n', `results_twitter` = '', `google_results` = 'least 5 \"orthographic words\" to the left and right of the test word, but note that punctuation ... The test word will be present at least once in each line. ...', `updated_at` = '2011-03-13 18:29:14' WHERE `id` = 980190962[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.8ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.5ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.5ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.9ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (1.6ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.6ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.9ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.9ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.5ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (1.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (3.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (4.7ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (4.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.5ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (1.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (336.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.6ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.8ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mWordSearch Create (0.3ms)[0m   [0;1mINSERT INTO `word_searches` (`keyword`, `results_yahoo`, `results_twitter`, `search_hitcount_per_ten_mins`, `created_at`, `updated_at`, `google_results`) VALUES('NewWord', NULL, NULL, NULL, '2011-03-13 18:30:48', '2011-03-13 18:30:48', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mWordSearch Update (0.4ms)[0m   [0mUPDATE `word_searches` SET `results_yahoo` = 'i have been dating this guy for a month an a half i have been sexually active with him but he doesnt want to ask me out because he is going to the marines in june.lately he has been ejaculating inside and neither of us are protecting ourselves with anything.we text everyday and everything but yet he doesnt show that he likes me he admitted he missed me on friday thats why he called me but that same night we had sex..is he using me? but why would he be cumming inside?\n', `results_twitter` = '', `google_results` = 'Feb 21, 2008 ... the empty word, and one can generate a new word, by taking a word w ... generating the new word aw. Hb. This suggests a ...', `search_hitcount_per_ten_mins` = 0, `updated_at` = '2011-03-13 18:30:50' WHERE `id` = 980190963[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mSQL (288.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.9ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (1.5ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (1.0ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.9ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`id` = 980190962) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (1.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.8ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mWordSearch Create (0.8ms)[0m   [0;1mINSERT INTO `word_searches` (`keyword`, `results_yahoo`, `results_twitter`, `search_hitcount_per_ten_mins`, `created_at`, `updated_at`, `google_results`) VALUES('NewWord', NULL, NULL, NULL, '2011-03-13 18:35:43', '2011-03-13 18:35:43', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mWordSearch Update (1.4ms)[0m   [0mUPDATE `word_searches` SET `results_yahoo` = 'This weekend I lost my softball glove. I really need some quick tips on how to break in a new one. I also would love to know where i can buy a worth liberty softball glove. Does sports chalet, chicks, or Dicks in Pasadena/La Canada sell them? This is very important because i have two league games this Tuesday and Thursday. I really need help!!\n', `results_twitter` = '', `google_results` = 'Feb 21, 2008 ... the empty word, and one can generate a new word, by taking a word w ... generating the new word aw. Hb. This suggests a ...', `search_hitcount_per_ten_mins` = 0, `updated_at` = '2011-03-13 18:35:48' WHERE `id` = 980190964[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mWordSearch Load (0.7ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'NewWord') LIMIT 1[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.6ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mWordSearch Update (0.9ms)[0m   [0mUPDATE `word_searches` SET `search_hitcount_per_ten_mins` = 0, `results_yahoo` = 'This weekend I lost my softball glove. I really need some quick tips on how to break in a new one. I also would love to know where i can buy a worth liberty softball glove. Does sports chalet, chicks, or Dicks in Pasadena/La Canada sell them? This is very important because i have two league games this Tuesday and Thursday. I really need help!!\n', `results_twitter` = '', `google_results` = 'least 5 \"orthographic words\" to the left and right of the test word, but note that punctuation ... The test word will be present at least once in each line. ...', `updated_at` = '2011-03-13 18:35:50' WHERE `id` = 980190962[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mWordSearch Load (0.6ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.4ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.5ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.4ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.6ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (1.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.5ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (1.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.0ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.5ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.3ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.2ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mWordSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;35;1mWordSearch Load (0.2ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'Testword') LIMIT 1[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mROLLBACK[0m

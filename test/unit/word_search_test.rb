@@ -15,7 +15,7 @@ class WordSearchTest < ActiveSupport::TestCase
   test "find a non existing entry" do
     searchresult = WordSearch.find_by_keyword("NewWord")
     assert_equal(searchresult,nil)
-    WordSearch.getresults("NewWord")
+    WordSearch.find_using("NewWord")
     searchresult = WordSearch.find_by_keyword("NewWord")
     assert_not_equal(searchresult,nil)
   end

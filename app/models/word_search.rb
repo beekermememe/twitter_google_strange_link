@@ -15,19 +15,17 @@ class WordSearch < ActiveRecord::Base
     inforegexp = Regexp.new("<Content>([.\\w\\W]*)")
     searchdata = inforegexp.match(request.content)
 
-    puts request.content
     data = $1
     inforegexp = Regexp.new("([.\\w\\W]*)</Content>")
     searchdata = inforegexp.match(data)
     data = $1
-    puts data.inspect
+
     data
   end
 
   def WordSearch.find_using(keyword)
 
     db_entry = WordSearch.find_by_keyword(keyword)
-    puts "#{db_entry.inspect}"
     if db_entry == nil then
       db_entry = WordSearch.create_new_index(keyword)  # create a new index
     else
@@ -44,11 +42,18 @@ class WordSearch < ActiveRecord::Base
 
   end
   def check_access_rate()
+
+    # To DO --- This is failing
+    # The idea is that if a user starts to hit a site alot maybe they
+    # know that there is an update required
+    # Also if it is popular this is a crude way of weighting the
+    # "Freshness"
+
     hittime = Time.now()
     self.search_hitcount_per_ten_mins = self.search_hitcount_per_ten_mins + 1
     self.search_hitcount_per_ten_mins = 0 if (hittime.min % 10) == 0
     if(self.search_hitcount_per_ten_mins > 100)
-          updatedb_entry()
+          update_entry()
     end
       #look for updated entry
   end
@@ -90,9 +95,6 @@ class WordSearch < ActiveRecord::Base
     request = session.get(url,:key => googlekey, :cx => cxid, :q=> search_word)
 
     data=JSON.parse(request.content)
-    data.each {|key,val|
-      puts "#{key}\n#{val}"
-    }
     data["items"][0]["snippet"]
   end
 
