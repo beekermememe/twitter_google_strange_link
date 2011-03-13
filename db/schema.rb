@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110313172847) do
+ActiveRecord::Schema.define(:version => 20110313190521) do
+
+  create_table "distinct_wordhits", :force => true do |t|
+    t.integer  "keyword_id"
+    t.string   "actual_word"
+    t.integer  "occurrances"
+    t.integer  "words_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "word_searches", :force => true do |t|
     t.string   "keyword"
@@ -19,6 +28,13 @@ ActiveRecord::Schema.define(:version => 20110313172847) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "google_results"
+  end
+
+  create_table "words", :force => true do |t|
+    t.string   "actual_word"
+    t.integer  "total_counts"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

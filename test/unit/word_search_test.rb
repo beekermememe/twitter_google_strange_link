@@ -59,4 +59,12 @@ class WordSearchTest < ActiveSupport::TestCase
     googledata = singleword.get_google_data("bananas")
     assert_not_nil(googledata)
   end
+
+  test "check indexing of words for db based search" do
+    singleword = word_searches(:three)
+    #singleword.add_google_data_to_key_word_search(singleword.google_result,singleword.keyword)
+  end
+
+
+
 end

@@ -4,7 +4,6 @@ require 'json'
 
 class WordSearch < ActiveRecord::Base
 
-
   def get_yahoo_data(search_word)
     bbauth = "Hvr61tnV34EPeRiijXPssjA2Tf23LysUC0hb3Jqne80rVOVfMbw8KHTQp2aG5EOj"
     url = "http://answers.yahooapis.com/AnswersService/V1/getByCategory"
@@ -32,6 +31,7 @@ class WordSearch < ActiveRecord::Base
       db_entry.check_access_rate() if db_entry != nil # create a new index if the access rate has increased
     end
     db_entry
+
   end
 
   def WordSearch.create_new_index(keyword)
@@ -95,7 +95,18 @@ class WordSearch < ActiveRecord::Base
     request = session.get(url,:key => googlekey, :cx => cxid, :q=> search_word)
 
     data=JSON.parse(request.content)
+
+    # TO DO -- Maybe spawn in a seperate thread/process
+    add_google_data_to_key_word_search(data["items"][0]["snippet"],search_word)
+
     data["items"][0]["snippet"]
   end
 
+  def add_google_data_to_key_word_search(data,search_word)
+    keywords = data.split(" ")
+    keywords.each{ |word|
+      Words.add_words(word)
+      DistinctWordhits.update_wordhits(word,search_word)
+    }
+  end
 end

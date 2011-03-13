@@ -6367,3 +6367,51 @@ Processing WordSearchController#getresults (for 127.0.0.1 at 2011-03-13 11:21:36
   [4;36;1mWordSearch Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `word_searches`[0m
   [4;35;1mWordSearch Load (0.1ms)[0m   [0mSELECT * FROM `word_searches` WHERE (`word_searches`.`keyword` = 'bananas') LIMIT 1[0m
 Completed in 14ms (View: 1, DB: 1) | 200 OK [http://localhost/word_search/getresults?wordtofind=bananas]
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (70.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (107.9ms)[0m   [0;1mDROP TABLE `word_searches`[0m
+  [4;35;1mSQL (15.9ms)[0m   [0mCREATE TABLE `word_searches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `keyword` varchar(255), `results_yahoo` text, `results_twitter` text, `search_hitcount_per_ten_mins` int(11), `created_at` datetime, `updated_at` datetime, `google_results` text) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateWordSearches (20110312024207)
+Migrating to AddGoogleResultsToWordSearches (20110313172847)
+Migrating to CreateDistinctWordhits (20110313190405)
+  [4;35;1mSQL (335.0ms)[0m   [0mCREATE TABLE `distinct_wordhits` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `keyword_id` int(11), `actual_word` varchar(255), `occurrances` int(11), `words_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110313190405')[0m
+Migrating to CreateWords (20110313190521)
+  [4;35;1mSQL (29.7ms)[0m   [0mCREATE TABLE `words` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `actual_word` varchar(255), `total_counts` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110313190521')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mSHOW FIELDS FROM `distinct_wordhits`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `distinct_wordhits`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `distinct_wordhits`[0m
+  [4;35;1mSQL (23.2ms)[0m   [0mSHOW FIELDS FROM `word_searches`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `word_searches`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `word_searches`[0m
+  [4;36;1mSQL (26.5ms)[0m   [0;1mSHOW FIELDS FROM `words`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `words`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `words`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateWordSearches (20110312024207)
+Migrating to AddGoogleResultsToWordSearches (20110313172847)
+Migrating to CreateDistinctWordhits (20110313190405)
+Migrating to CreateWords (20110313190521)
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `distinct_wordhits`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `distinct_wordhits`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `distinct_wordhits`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `word_searches`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `word_searches`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `word_searches`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `words`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `words`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `words`[0m
