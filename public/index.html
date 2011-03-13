@@ -1,0 +1,91 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+     $(".getdata").click(function(){
+        console.log("Submit Hit");
+        $(".twitter_search_results").html("Searching....");
+        $(".google_search_results").html("Searching....");
+        var $wordsearch="wordtofind="+$(":text").val();
+        //$.ajax({url: '/word_search/getresults?wordtofind='+$(":text").val(), dataTypeString: "text", success: function(html){update_search_window(html)}});
+        $.get('/word_search/getresults','wordtofind='+$(":text").val(),function(data){console.log(data);update_search_window(data);});
+        console.log("Updated :)");
+
+     });
+     $("#text_for_search").keypress(function(event) {
+        if (event.keyCode == '13') {
+            console.log("Enter Hit");
+            $(".twitter_search_results").html("Searching....");
+            $(".google_search_results").html("Searching....");
+            var $wordsearch="wordtofind="+$(":text").val();
+            //$.ajax({url: '/word_search/getresults?wordtofind='+$(":text").val(), dataTypeString: "text", success: function(html){update_search_window(html)}});
+            $.get('/word_search/getresults','wordtofind='+$(":text").val(),function(data){console.log(data);update_search_window(data);});
+            console.log("Updated :)");
+        }
+     });
+
+    });
+    function update_search_window(searchresults){
+        results = $.parseXML(searchresults),
+                $xml = $( results ),
+                $errors = $xml.find( 'error' ),
+                $yahoo_results = $xml.find( 'search1data' ),
+                $google_results = $xml.find( 'search2data' )
+                ;
+        console.log("Errors found = " + $errors.text());
+        var $err = $errors.text();
+        if($err.toString().length > 1 ) {
+           $(".twitter_search_results").html("");
+           $(".google_search_results").html("");
+           error_dialog($errors.text());
+        }
+        else
+        {
+            console.log(results);
+            $(".twitter_search_results").html($google_results.text());
+            $(".google_search_results").html($yahoo_results.text());
+        }
+    }
+
+
+    function error_dialog(message) {
+            $(".error").html("<b>" + message + "</b>");
+            $(".error").dialog({
+                autoOpen: true,
+                title: 'Warning Message  '
+            })
+    };
+</script>
+<html>
+<body>
+<table border="1"><tr><td>
+<div id="searchword">
+<h4>Easy Search - Please enter the topic (one word only please)</h4>
+<form id="wordsearch">
+    <input id="text_for_search" type="text"></input>
+    <p class="getdata"><u>Return Search Result</u></p>
+</form>
+</div>
+</<td></tr>
+<tr><td>
+<div id="results">
+<h4>Last 3 Twitter updates of a user with this entry</h4>
+<table>
+<tr><td class="twittertitle"></td><td></td></tr><tr></tr><td></td><td class="twitter_search_results"></td>
+</table>
+<br>
+<h4>Top Google search result with this entry</h4>
+<table>
+<tr><td class="googletitle"></td></tr><tr></tr><tr><td></td><td class="google_search_results"></td></tr>
+</table>
+</td></tr></table>
+<div class="error"></div>
+
+
+
+
+</body>
+
+
+
+</html>
